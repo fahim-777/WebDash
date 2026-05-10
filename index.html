@@ -88,7 +88,7 @@
           </div>
 
           <div class="lighthouse-strip">
-            <p class="strip-label">This site scores</p>
+            <p class="strip-label">This site scores · <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.webdash.co.uk%2F" rel="noopener" class="accent">verify on PageSpeed Insights →</a></p>
             <div class="gauges">
               <div class="gauge" data-gauge="100">
                 <svg class="gauge-svg" viewBox="0 0 56 56">
@@ -188,6 +188,18 @@
         <span>Charities</span><span class="acc">/</span>
         <span>Dentists</span><span class="acc">/</span>
       </div>
+    </div>
+
+    <!-- LIVE THIS WEEK -->
+    <!-- TODO: Replace with the real businesses you've shipped recently. Update weekly. -->
+    <div class="ships" data-reveal>
+      <span class="ships-label"><span class="live-dot" aria-hidden="true"></span>Live this week</span>
+      <ul class="ships-list">
+        <li>Aurora Aesthetics, Liverpool</li>
+        <li>The Quayside Kitchen, Leeds</li>
+        <li>Marsden &amp; Hill, Birmingham</li>
+        <li>Forge Strength, Bristol</li>
+      </ul>
     </div>
 
     <!-- STATS / WHY PERFORMANCE MATTERS -->
@@ -408,6 +420,67 @@
       </div>
     </section>
 
+    <!-- TESTIMONIALS -->
+    <!-- TODO: Replace placeholder quotes/names/links with real client testimonials (with permission). -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">In their words</span>
+          <h2>Don't take our word for it.</h2>
+          <p>Quotes from real WebDash clients. Tap any card to see the original review on Google.</p>
+        </div>
+        <div class="testimonials">
+
+          <article class="testimonial glow" data-reveal data-delay="1">
+            <p class="t-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="t-quote">"Quote requests up nearly 200% in the first three months. We've stopped advertising — the site does the selling for us now."</p>
+            <div class="t-attr">
+              <div class="t-avatar" style="--avatar-bg: #c9ff3b;">DM</div>
+              <div class="t-meta">
+                <div class="t-name">David Marsh</div>
+                <div class="t-role">Owner, Northgate Roofing · Manchester</div>
+              </div>
+              <a href="#" rel="noopener" class="t-link" aria-label="View on Google Reviews">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="testimonial glow" data-reveal data-delay="2">
+            <p class="t-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="t-quote">"Live in 11 days from the kickoff call. Picked up the phone every time I rang. The booking form alone has saved my front-of-house hours every week."</p>
+            <div class="t-attr">
+              <div class="t-avatar" style="--avatar-bg: #6dffd0;">SW</div>
+              <div class="t-meta">
+                <div class="t-name">Sarah Whitman</div>
+                <div class="t-role">Manager, The Quayside Kitchen · Leeds</div>
+              </div>
+              <a href="#" rel="noopener" class="t-link" aria-label="View on Google Reviews">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="testimonial glow" data-reveal data-delay="3">
+            <p class="t-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="t-quote">"We were on Shopify paying £140/mo in plugin fees alone. WebDash rebuilt us from scratch — same checkout, half the page weight, conversion is up 38%."</p>
+            <div class="t-attr">
+              <div class="t-avatar" style="--avatar-bg: #b0ff52;">TP</div>
+              <div class="t-meta">
+                <div class="t-name">Tom Pennington</div>
+                <div class="t-role">Founder, Pennine Coffee Roasters · Sheffield</div>
+              </div>
+              <a href="#" rel="noopener" class="t-link" aria-label="View on Google Reviews">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+        <p class="center muted" style="margin-top:2rem;font-size:.92rem;">More on the <a href="work.html" class="accent">work page</a> · See live results from every recent build</p>
+      </div>
+    </section>
+
     <!-- PRICING -->
     <section class="section">
       <div class="container">
@@ -431,10 +504,10 @@
               <li>Live in 14 days</li>
             </ul>
             <a href="about.html#contact" class="btn btn-ghost btn-block">Get started</a>
-            <p class="plan-foot">Money-back guarantee · No contracts</p>
-          </article>
+            <p class="plan-foot"><a href="guarantee.html" class="accent">14-day money-back guarantee</a> · No contracts</p>
+            </article>
 
-          <article class="plan is-featured glow" data-reveal data-delay="2">
+            <article class="plan is-featured glow" data-reveal data-delay="2">
             <span class="plan-tag">Most popular</span>
             <div class="plan-name">The Growth</div>
             <p class="plan-blurb">For growing service businesses that need to rank, capture leads and look the part.</p>
@@ -449,7 +522,7 @@
               <li>Monthly performance report</li>
             </ul>
             <a href="about.html#contact" class="btn btn-primary btn-block">Get started</a>
-            <p class="plan-foot">Money-back guarantee · No contracts</p>
+            <p class="plan-foot"><a href="guarantee.html" class="accent">14-day money-back guarantee</a> · No contracts</p>
           </article>
 
           <article class="plan glow" data-reveal data-delay="3">
@@ -466,7 +539,7 @@
               <li>Priority support</li>
             </ul>
             <a href="about.html#contact" class="btn btn-ghost btn-block">Get started</a>
-            <p class="plan-foot">Money-back guarantee · No contracts</p>
+            <p class="plan-foot"><a href="guarantee.html" class="accent">14-day money-back guarantee</a> · No contracts</p>
           </article>
         </div>
         <p class="center muted" style="margin-top:2rem;font-size:.92rem;">Need something different? <a href="about.html#contact" class="accent">Tell us about your project</a> — we quote custom builds too.</p>
@@ -561,6 +634,8 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="careers.html">Careers</a></li>
+            <li><a href="process.html">Our process</a></li>
+            <li><a href="guarantee.html">Guarantee</a></li>
           </ul>
         </div>
         <div>
@@ -575,6 +650,23 @@
       <div class="footer-bottom">
         <span>© <span id="y">2026</span> WebDash Ltd. All rights reserved.</span>
         <span>Hand-coded in the UK.</span>
+      </div>
+      <!-- TODO: Replace these placeholder legitimacy details with your real Companies House number, VAT registration, ICO registration, and registered office address before going live. -->
+      <div class="footer-legal">
+        <div class="footer-legal-info">
+          <span><strong>WebDash Ltd</strong> · Registered in England &amp; Wales · Company No. 12345678</span>
+          <span>Registered office: 1 Example Street, Manchester, M1 1AA, United Kingdom</span>
+          <span>VAT GB 123 4567 89 · ICO Registration ZA123456</span>
+        </div>
+        <div class="footer-legal-links">
+          <a href="guarantee.html">Guarantee</a>
+          <span class="sep">·</span>
+          <a href="process.html">Process</a>
+          <span class="sep">·</span>
+          <a href="#privacy">Privacy</a>
+          <span class="sep">·</span>
+          <a href="#terms">Terms</a>
+        </div>
       </div>
     </div>
   </footer>
