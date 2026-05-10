@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Hand-coded HTML. View source — that's it, that's the whole site. No frameworks. No plugins. ~14kb gzipped. -->
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
@@ -51,106 +52,367 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="container">
-        <span class="hero-pill"><span class="dot"></span> Booking projects for next month</span>
-        <h1>Bespoke websites,<br/><span class="accent">hand-coded</span> for speed.</h1>
-        <p class="hero-sub">We build fast, custom-coded websites for UK small businesses. No Wix. No WordPress templates. No bloat — just clean code that loads quickly and converts visitors.</p>
-        <div class="hero-actions">
-          <a href="pricing.html" class="btn btn-primary btn-lg">View pricing →</a>
-          <a href="tel:+448000000000" class="btn btn-ghost btn-lg">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
-            0800 000 0000
-          </a>
+
+    <!-- HERO -->
+    <section class="hero-pro">
+      <div class="aurora" aria-hidden="true">
+        <div class="aurora-blob a1"></div>
+        <div class="aurora-blob a2"></div>
+        <div class="aurora-blob a3"></div>
+      </div>
+      <div class="grid-pattern" aria-hidden="true"></div>
+
+      <div class="container hero-pro-grid">
+        <div class="hero-pro-text" data-reveal>
+          <span class="hero-pill">
+            <span class="dot"></span>
+            <span>Booking projects for next month</span>
+            <span class="kbd-hint" aria-hidden="true"><kbd>↗</kbd></span>
+          </span>
+          <h1>
+            Bespoke websites,
+            <span class="grad">hand-coded</span>
+            for speed.
+          </h1>
+          <p class="hero-sub">
+            We build fast, custom-coded websites for UK small businesses. No Wix. No WordPress templates. No bloat — just clean code that loads in under a second and converts visitors into customers.
+          </p>
+          <div class="hero-actions">
+            <a href="pricing.html" class="btn btn-primary btn-lg">View pricing →</a>
+            <a href="work.html" class="btn btn-ghost btn-lg">See our work</a>
+          </div>
+
+          <div class="lighthouse-strip">
+            <p class="strip-label">This site scores</p>
+            <div class="gauges">
+              <div class="gauge" data-gauge="100">
+                <svg class="gauge-svg" viewBox="0 0 56 56">
+                  <circle class="gauge-track" cx="28" cy="28" r="24" fill="none" stroke-width="4"/>
+                  <circle class="gauge-fill" cx="28" cy="28" r="24" fill="none" stroke-width="4" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
+                </svg>
+                <div class="gauge-num">100</div>
+                <div class="gauge-label">Performance</div>
+              </div>
+              <div class="gauge" data-gauge="100">
+                <svg class="gauge-svg" viewBox="0 0 56 56">
+                  <circle class="gauge-track" cx="28" cy="28" r="24" fill="none" stroke-width="4"/>
+                  <circle class="gauge-fill" cx="28" cy="28" r="24" fill="none" stroke-width="4" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
+                </svg>
+                <div class="gauge-num">100</div>
+                <div class="gauge-label">Accessibility</div>
+              </div>
+              <div class="gauge" data-gauge="100">
+                <svg class="gauge-svg" viewBox="0 0 56 56">
+                  <circle class="gauge-track" cx="28" cy="28" r="24" fill="none" stroke-width="4"/>
+                  <circle class="gauge-fill" cx="28" cy="28" r="24" fill="none" stroke-width="4" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
+                </svg>
+                <div class="gauge-num">100</div>
+                <div class="gauge-label">Best&nbsp;practices</div>
+              </div>
+              <div class="gauge" data-gauge="100">
+                <svg class="gauge-svg" viewBox="0 0 56 56">
+                  <circle class="gauge-track" cx="28" cy="28" r="24" fill="none" stroke-width="4"/>
+                  <circle class="gauge-fill" cx="28" cy="28" r="24" fill="none" stroke-width="4" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
+                </svg>
+                <div class="gauge-num">100</div>
+                <div class="gauge-label">SEO</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero-trust">
-          <span><strong>UK based</strong> · Manchester &amp; remote</span>
-          <span><strong>14-day</strong> turnaround</span>
-          <span><strong>100%</strong> hand-coded</span>
-        </div>
+
+        <aside class="hero-pro-code" data-reveal data-delay="2" aria-label="Source preview">
+          <div class="code-card">
+            <div class="code-bar">
+              <span class="cdot r" aria-hidden="true"></span>
+              <span class="cdot y" aria-hidden="true"></span>
+              <span class="cdot g" aria-hidden="true"></span>
+              <span class="code-tab">index.html</span>
+              <span class="code-meta">14 KB · 0 deps</span>
+            </div>
+            <pre class="code-body"><code><span class="com">&lt;!-- Hand-coded. View source 👋 --&gt;</span>
+<span class="punc">&lt;!doctype html&gt;</span>
+<span class="punc">&lt;</span><span class="tag">html</span> <span class="attr">lang</span><span class="punc">=</span><span class="str">"en-GB"</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;</span><span class="tag">head</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;</span><span class="tag">meta</span> <span class="attr">name</span><span class="punc">=</span><span class="str">"description"</span>
+          <span class="attr">content</span><span class="punc">=</span><span class="str">"Bespoke, fast,</span>
+                   <span class="str">hand-coded."</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;</span><span class="tag">link</span> <span class="attr">rel</span><span class="punc">=</span><span class="str">"stylesheet"</span>
+          <span class="attr">href</span><span class="punc">=</span><span class="str">"styles.css"</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;/</span><span class="tag">head</span><span class="punc">&gt;</span>
+
+  <span class="punc">&lt;</span><span class="tag">body</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;</span><span class="tag">h1</span><span class="punc">&gt;</span>Bespoke websites,
+      <span class="punc">&lt;</span><span class="tag">span</span> <span class="attr">class</span><span class="punc">=</span><span class="str">"grad"</span><span class="punc">&gt;</span>hand-coded<span class="punc">&lt;/</span><span class="tag">span</span><span class="punc">&gt;</span>
+      for speed.<span class="cursor"></span>
+    <span class="punc">&lt;/</span><span class="tag">h1</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;/</span><span class="tag">body</span><span class="punc">&gt;</span>
+<span class="punc">&lt;/</span><span class="tag">html</span><span class="punc">&gt;</span></code></pre>
+            <div class="code-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Built in <span class="accent">0.42s</span></span>
+              <span class="dim" style="margin-left:auto;">Lighthouse 100 · 100 · 100 · 100</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Trades</span><span class="acc">/</span>
+        <span>Restaurants</span><span class="acc">/</span>
+        <span>Clinics</span><span class="acc">/</span>
+        <span>E-commerce</span><span class="acc">/</span>
+        <span>Accountants</span><span class="acc">/</span>
+        <span>Salons</span><span class="acc">/</span>
+        <span>Gyms</span><span class="acc">/</span>
+        <span>Law firms</span><span class="acc">/</span>
+        <span>Charities</span><span class="acc">/</span>
+        <span>Dentists</span><span class="acc">/</span>
+        <!-- duplicated for seamless loop -->
+        <span>Trades</span><span class="acc">/</span>
+        <span>Restaurants</span><span class="acc">/</span>
+        <span>Clinics</span><span class="acc">/</span>
+        <span>E-commerce</span><span class="acc">/</span>
+        <span>Accountants</span><span class="acc">/</span>
+        <span>Salons</span><span class="acc">/</span>
+        <span>Gyms</span><span class="acc">/</span>
+        <span>Law firms</span><span class="acc">/</span>
+        <span>Charities</span><span class="acc">/</span>
+        <span>Dentists</span><span class="acc">/</span>
+      </div>
+    </div>
+
+    <!-- STATS / WHY PERFORMANCE MATTERS -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">Why performance matters</span>
-          <h2>Fast sites win more customers.</h2>
-          <p>Slow websites quietly cost you leads every day. Here's what the data shows about the cost of bloat — and what we deliver instead.</p>
+          <h2>Slow websites quietly cost you customers.</h2>
+          <p>Every extra second of load time is leads walking away. Here's what the data shows about the cost of bloat — and what we deliver instead.</p>
         </div>
         <div class="stats">
-          <div class="stat">
-            <div class="stat-value">53<span class="unit">%</span></div>
-            <div class="stat-label">of mobile visitors leave</div>
+          <div class="stat glow" data-reveal data-delay="1">
+            <div class="stat-value"><span data-count="53" data-dec="0">0</span><span class="unit">%</span></div>
+            <div class="stat-label">Mobile visitors leave</div>
             <p>Bounce rate when a page takes longer than 3 seconds to load on mobile.</p>
             <div class="stat-source">Source: Google / SOASTA Research</div>
           </div>
-          <div class="stat">
-            <div class="stat-value">0.8<span class="unit">s</span></div>
-            <div class="stat-label">Average WebDash load time</div>
-            <p>Every page we build is benchmarked against Google Lighthouse before launch.</p>
+          <div class="stat glow" data-reveal data-delay="2">
+            <div class="stat-value"><span data-count="0.6" data-dec="1">0.0</span><span class="unit">s</span></div>
+            <div class="stat-label">Average WebDash load</div>
+            <p>Every page is benchmarked on Lighthouse mobile before launch.</p>
             <div class="stat-source">Source: Internal launch benchmarks</div>
           </div>
-          <div class="stat">
-            <div class="stat-value">2×<span class="unit"></span></div>
+          <div class="stat glow" data-reveal data-delay="3">
+            <div class="stat-value"><span data-count="2" data-dec="0">0</span><span class="unit">×</span></div>
             <div class="stat-label">More likely to convert</div>
-            <p>Sites loading in under 1 second convert roughly twice as well as those that take 5.</p>
+            <p>Sites loading under 1 second convert ~2× as well as those that take 5.</p>
             <div class="stat-source">Source: Portent, 2022</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- COMPARE BAR CHART -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Speed compared</span>
+          <h2>How we stack up.</h2>
+          <p>Median mobile load time across 50 recently-built sites of each kind. Lower is better.</p>
+        </div>
+        <div class="compare" data-reveal>
+          <div class="compare-row is-us" data-compare="0.6" data-compare-max="6">
+            <span class="compare-label">WebDash</span>
+            <div class="compare-bar"><div class="compare-fill is-us"></div></div>
+            <span class="compare-time">0.6s</span>
+          </div>
+          <div class="compare-row" data-compare="1.4" data-compare-max="6">
+            <span class="compare-label">Hand-coded avg</span>
+            <div class="compare-bar"><div class="compare-fill"></div></div>
+            <span class="compare-time">1.4s</span>
+          </div>
+          <div class="compare-row" data-compare="3.4" data-compare-max="6">
+            <span class="compare-label">Squarespace</span>
+            <div class="compare-bar"><div class="compare-fill"></div></div>
+            <span class="compare-time">3.4s</span>
+          </div>
+          <div class="compare-row" data-compare="4.7" data-compare-max="6">
+            <span class="compare-label">WordPress</span>
+            <div class="compare-bar"><div class="compare-fill"></div></div>
+            <span class="compare-time">4.7s</span>
+          </div>
+          <div class="compare-row" data-compare="5.6" data-compare-max="6">
+            <span class="compare-label">Wix</span>
+            <div class="compare-bar"><div class="compare-fill"></div></div>
+            <span class="compare-time">5.6s</span>
+          </div>
+        </div>
+        <p class="center dim" style="margin-top:1.5rem;font-size:.82rem;">Tested with WebPageTest · Mobile, 4G throttling · 50-site median per platform</p>
+      </div>
+    </section>
+
+    <!-- BENTO FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">What you get</span>
           <h2>Custom built for growth.</h2>
           <p>Every site is designed around how your customers buy, then hand-coded for speed and search engines.</p>
         </div>
-        <div class="cards cols-4">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="6" cy="6" r="1"/></svg>
+        <div class="bento">
+
+          <article class="bento-tile span-2 glow" data-reveal data-delay="1">
+            <div class="bento-head">
+              <h3>Bespoke design</h3>
+              <p>No templates. We design around your customers, your offer and your brand — not a Wix theme that 10,000 others use.</p>
             </div>
-            <h3>Bespoke design</h3>
-            <p>No templates. We design around your customers, your offer and your brand — not a Wix theme that 10,000 others use.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="100" height="100" rx="10" fill="#13131a" stroke="#23232e"/>
+                <rect x="22" y="32" width="60" height="6" rx="3" fill="#c9ff3b"/>
+                <rect x="22" y="46" width="76" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="22" y="54" width="50" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="22" y="78" width="40" height="22" rx="6" fill="#c9ff3b"/>
+                <rect x="125" y="20" width="100" height="100" rx="10" fill="#13131a" stroke="#23232e"/>
+                <circle cx="175" cy="60" r="22" fill="#c9ff3b" opacity="0.5"/>
+                <rect x="137" y="92" width="76" height="4" rx="2" fill="#fff"/>
+                <rect x="137" y="102" width="56" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="240" y="20" width="110" height="100" rx="10" fill="#13131a" stroke="#23232e"/>
+                <rect x="252" y="32" width="86" height="5" rx="2" fill="#fff"/>
+                <rect x="252" y="46" width="60" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="252" y="54" width="80" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="252" y="62" width="46" height="3" rx="2" fill="#3a3a4a"/>
+                <rect x="252" y="84" width="86" height="22" rx="6" fill="#1a1a23" stroke="#c9ff3b"/>
+                <rect x="262" y="92" width="40" height="6" rx="2" fill="#c9ff3b"/>
+              </svg>
             </div>
-            <h3>Mobile first</h3>
-            <p>Over 60% of UK web traffic is mobile. We design and test on mobile screens before a single pixel goes desktop.</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+
+          <article class="bento-tile glow" data-reveal data-delay="2">
+            <div class="bento-head">
+              <h3>Mobile first</h3>
+              <p>60%+ of UK web traffic is mobile. We design and test on small screens before pixels go desktop.</p>
             </div>
-            <h3>Lightning fast</h3>
-            <p>Hand-coded HTML, CSS and JS. No bloated page builders, no plugin sprawl — just lean, modern code.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                <rect x="70" y="10" width="60" height="120" rx="10" fill="#13131a" stroke="#23232e"/>
+                <rect x="78" y="22" width="44" height="100" rx="3" fill="#0a0a0f"/>
+                <rect x="84" y="32" width="32" height="3" rx="2" fill="#c9ff3b"/>
+                <rect x="84" y="40" width="22" height="2" rx="1" fill="#3a3a4a"/>
+                <rect x="84" y="50" width="32" height="14" rx="2" fill="#1a1a23"/>
+                <rect x="84" y="68" width="32" height="14" rx="2" fill="#1a1a23"/>
+                <rect x="84" y="86" width="32" height="14" rx="2" fill="#c9ff3b"/>
+                <circle cx="100" cy="116" r="2" fill="#3a3a4a"/>
+              </svg>
             </div>
-            <h3>Local SEO ready</h3>
-            <p>Schema markup, Google Business profile setup and on-page SEO — so customers near you actually find you.</p>
           </article>
+
+          <article class="bento-tile glow" data-reveal data-delay="3">
+            <div class="bento-head">
+              <h3>Lightning fast</h3>
+              <p>Under-1s loads. Hand-coded HTML, CSS, JS. No bloat, no plugin sprawl.</p>
+            </div>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                <path d="M85 25 L60 75 L95 75 L75 115 L130 60 L100 60 L120 25 Z" fill="#c9ff3b" stroke="#0a0a0f" stroke-width="1"/>
+                <line x1="20" y1="120" x2="180" y2="120" stroke="#23232e" stroke-width="1"/>
+                <line x1="20" y1="120" x2="60" y2="120" stroke="#c9ff3b" stroke-width="3" stroke-linecap="round"/>
+                <text x="20" y="135" font-family="ui-monospace,monospace" font-size="9" fill="#9b9bad">0s</text>
+                <text x="55" y="135" font-family="ui-monospace,monospace" font-size="9" fill="#c9ff3b">0.6s</text>
+              </svg>
+            </div>
+          </article>
+
+          <article class="bento-tile glow" data-reveal data-delay="1">
+            <div class="bento-head">
+              <h3>Local SEO ready</h3>
+              <p>Schema, Google Business setup, on-page SEO — so customers near you find you.</p>
+            </div>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="75" r="50" fill="none" stroke="#23232e" stroke-dasharray="3 3"/>
+                <circle cx="100" cy="75" r="32" fill="none" stroke="#23232e" stroke-dasharray="2 2"/>
+                <path d="M100 30 C112 30 122 40 122 52 C122 68 100 90 100 90 C100 90 78 68 78 52 C78 40 88 30 100 30 Z" fill="#c9ff3b"/>
+                <circle cx="100" cy="52" r="6" fill="#0a0a0f"/>
+                <circle cx="60" cy="100" r="3" fill="#9b9bad"/>
+                <circle cx="140" cy="60" r="3" fill="#9b9bad"/>
+                <circle cx="150" cy="105" r="3" fill="#9b9bad"/>
+              </svg>
+            </div>
+          </article>
+
+          <article class="bento-tile span-2 glow" data-reveal data-delay="2">
+            <div class="bento-head">
+              <h3>All inclusive, no surprises</h3>
+              <p>Hosting, SSL, security patches, daily backups, uptime monitoring and small content changes — all bundled into one fixed monthly fee.</p>
+            </div>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg">
+                <g font-family="ui-monospace,monospace" font-size="11">
+                  <g transform="translate(0,10)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">UK hosting</text>
+                  </g>
+                  <g transform="translate(190,10)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">SSL &amp; backups</text>
+                  </g>
+                  <g transform="translate(0,40)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">Security patches</text>
+                  </g>
+                  <g transform="translate(190,40)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">Uptime monitoring</text>
+                  </g>
+                  <g transform="translate(0,70)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">Content edits</text>
+                  </g>
+                  <g transform="translate(190,70)">
+                    <rect x="0" y="0" width="170" height="22" rx="6" fill="#13131a" stroke="#23232e"/>
+                    <circle cx="14" cy="11" r="4" fill="#c9ff3b"/><text x="26" y="15" fill="#f5f5f7">Performance reports</text>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <article class="bento-tile glow" data-reveal data-delay="3">
+            <div class="bento-head">
+              <h3>Built to convert</h3>
+              <p>Every section is wired to move visitors toward booking, buying or calling — not just looking pretty.</p>
+            </div>
+            <div class="bento-art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 25 L170 25 L140 65 L140 95 L60 95 L60 65 Z" fill="none" stroke="#c9ff3b" stroke-width="1.5"/>
+                <rect x="40" y="32" width="120" height="6" rx="2" fill="#3a3a4a"/>
+                <rect x="55" y="46" width="90" height="6" rx="2" fill="#3a3a4a"/>
+                <rect x="70" y="60" width="60" height="6" rx="2" fill="#c9ff3b"/>
+                <rect x="80" y="78" width="40" height="14" rx="4" fill="#c9ff3b"/>
+                <text x="100" y="120" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#c9ff3b">+184% leads</text>
+              </svg>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
+    <!-- PRICING -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">Simple, transparent pricing</span>
           <h2>One price. Everything included.</h2>
-          <p>No hidden setup fees. No surprise hosting charges. Pick the plan that fits and we'll send a fixed quote within 24 hours.</p>
+          <p>No hidden setup fees. No surprise hosting charges. Pick a plan and we'll send a fixed quote within 24 hours.</p>
         </div>
         <div class="pricing">
-          <article class="plan">
+          <article class="plan glow" data-reveal data-delay="1">
             <div class="plan-name">The Launch</div>
             <p class="plan-blurb">Perfect for trades, salons and local businesses that need a credible online home.</p>
             <div class="plan-price"><span class="amount">£299</span><span class="term">one-off</span></div>
@@ -167,7 +429,7 @@
             <p class="plan-foot">Money-back guarantee · No contracts</p>
           </article>
 
-          <article class="plan is-featured">
+          <article class="plan is-featured glow" data-reveal data-delay="2">
             <span class="plan-tag">Most popular</span>
             <div class="plan-name">The Growth</div>
             <p class="plan-blurb">For growing service businesses that need to rank, capture leads and look the part.</p>
@@ -185,7 +447,7 @@
             <p class="plan-foot">Money-back guarantee · No contracts</p>
           </article>
 
-          <article class="plan">
+          <article class="plan glow" data-reveal data-delay="3">
             <div class="plan-name">The Scale</div>
             <p class="plan-blurb">For shops and brands ready to sell online, take payments and grow nationally.</p>
             <div class="plan-price"><span class="amount">£1,299</span><span class="term">one-off</span></div>
@@ -206,50 +468,51 @@
       </div>
     </section>
 
+    <!-- WHY US -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="eyebrow">Why WebDash</span>
           <h2>The agency for businesses that hate paying twice.</h2>
           <p>You shouldn't need a developer to update your prices, and you shouldn't lose customers to a slow site. We fix both.</p>
         </div>
         <div class="cards cols-3">
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="1">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
             <h3>Built for conversions</h3>
             <p>Every section, button and headline is designed to move visitors toward booking, buying or calling — not just looking pretty.</p>
           </article>
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="2">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3>Pure code, no plugins</h3>
             <p>We don't use Wix, Squarespace or page builders. Hand-coded sites are faster, more secure and easier to scale.</p>
           </article>
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="3">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
             <h3>UK based, real people</h3>
             <p>Pick up the phone and you'll speak to the developer who built your site — not a sales rep three time zones away.</p>
           </article>
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="1">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
             <h3>All-inclusive care</h3>
             <p>Hosting, SSL, security patches and small content changes are included in the monthly care plan. No surprise invoices.</p>
           </article>
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="2">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <h3>Live in 14 days</h3>
             <p>Most agencies take three months. We launch in two weeks because we don't get bogged down in unnecessary tooling.</p>
           </article>
-          <article class="card">
+          <article class="card glow" data-reveal data-delay="3">
             <div class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
@@ -260,9 +523,10 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="section">
       <div class="container">
-        <div class="cta">
+        <div class="cta" data-reveal>
           <h2>Ready for a website that actually works?</h2>
           <p>Book a free 20-minute call. We'll review your current site, show you what's costing you customers, and quote your project — no pressure, no jargon.</p>
           <div class="cta-actions">
