@@ -1,5 +1,33 @@
 (function () {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const root = document.documentElement;
+
+  // ---------- Theme toggle ----------
+  const getTheme = () => (root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+  const applyTheme = (t) => {
+    if (t === 'light') root.setAttribute('data-theme', 'light');
+    else root.removeAttribute('data-theme');
+  };
+  const setStored = (t) => { try { localStorage.setItem('theme', t); } catch (e) {} };
+
+  document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const next = getTheme() === 'light' ? 'dark' : 'light';
+      applyTheme(next);
+      setStored(next);
+      btn.setAttribute('aria-label', next === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    });
+  });
+
+  // Sync with system theme changes only if the user hasn't picked one explicitly.
+  try {
+    const mql = window.matchMedia('(prefers-color-scheme: light)');
+    mql.addEventListener && mql.addEventListener('change', (e) => {
+      let stored = null;
+      try { stored = localStorage.getItem('theme'); } catch (e2) {}
+      if (!stored) applyTheme(e.matches ? 'light' : 'dark');
+    });
+  } catch (e) {}
 
   // ---------- Nav ----------
   const nav = document.querySelector('[data-nav]');
